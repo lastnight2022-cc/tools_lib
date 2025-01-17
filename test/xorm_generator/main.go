@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	dsn := flag.String("dsn", "", "Data Source Name for database connection")
+	dsn := flag.String("dsn", "root:123456@tcp(127.0.0.1:3306)/gva?charset=utf8mb4&parseTime=True&loc=Local", "Data Source Name for database connection")
 	output := flag.String("output", "./models", "Output directory for generated files")
 	tableName := flag.String("table", "", "Specific table name to generate (optional)")
 	flag.Parse()
